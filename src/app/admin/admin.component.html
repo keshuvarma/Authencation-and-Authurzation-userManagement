@@ -1,0 +1,5 @@
+<h1>Admin</h1>
+
+<button (click)="back()">Back</button>
+
+  <li *ngIf="authService.isLoggedIn()"><a (click)="logout()">Logout</a></li>

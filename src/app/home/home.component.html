@@ -1,0 +1,6 @@
+<h2 *ngIf="authService.isLoggedIn()">welcome {{authService.currentUser.username}}!!!</h2>
+<ul>
+  <li *ngIf="authService.isLoggedIn() && authService.isAdmin()">
+    <a (click)="admin()">Admin</a></li>
+  <li *ngIf="authService.isLoggedIn()"><a (click)="logout()">Logout</a></li>
+</ul>
